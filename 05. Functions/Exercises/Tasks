@@ -1,0 +1,109 @@
+Exercise: Functions Advanced
+Problems for exercise and homework for the Python Advanced Course @SoftUni.
+Submit your solutions in the SoftUni judge system at https://judge.softuni.bg/Contests/1839.
+1.	Even Numbers
+Write a program that receives a sequence of numbers (integers), separated by a single space. It should print a list of only the even numbers. Use filter().
+Example
+Input	Output
+1 2 3 4	[2, 4]
+2.	Sort
+Write a program that receives a sequence of numbers (integers), separated by a single space. It should print a sorted list of numbers in ascending order. Use sorted().
+Example
+Input	Output
+6 2 4	[2, 4, 6]
+3.	Min Max and Sum
+Write a program that receives a sequence of numbers (integers), separated by a single space. It should print the min and max values of the given numbers and the sum of all the numbers in the list. Use min(), max() and sum().
+The output should be as follows:
+•	On the first line: "The minimum number is {minimum number}"
+•	On the second line: "The maximum number is {maximum number}"
+•	On the third line: "The sum number is {sum of all numbers}"
+Example
+Input	Output
+2 4 6	The minimum number is 2
+The maximum number is 6
+The sum number is: 12
+4.	Negative vs Positive
+You will receive a sequence of numbers (integers), separated by a single space. Separate the negative numbers from the positive.
+Find the total sum of the negatives and positives, replace the negative number with its absolute value and print the following:
+•	On the first line print the sum of the negatives
+•	On the second line print the sum of the positives
+•	On the third line:
+o	If the absolute negative number is bigger than the positive number:
+	"The negatives are stronger than the positives"
+o	If the positive number is bigger than the absolute negative number:
+	"The positives are stronger than the negatives"
+Example
+Input	Output
+1 2 -3 -4 65 -98 12 57 -84
+
+-189
+137
+The negatives are stronger than the positives
+5.	Odd or Even
+On the first line you will receive a command - "Odd" or "Even". On the second line you will receive a sequence of numbers (integers), separated by a single space.
+•	If the command is "Odd", print the sum of the Odd numbers multiplied by the count of all numbers.
+•	If the command is "Even", print the sum of the Even numbers multiplied by the count of all numbers.
+Example
+Input	Output	Comment
+Odd
+1 3 5 34 7 9 12 11 13 10	490 	The sum of all odd numbers is: 1 + 3 + 5 + 7 + 9 + 11 + 13 = 49.
+Multiply the sum: 49 * 10 = 490.
+
+6.	Arguments Length
+Create a function called args_length() that returns the number of the arguments. Submit only the function in the judge system.
+Examples
+Test Code	Output
+print(args_length(1, 32, 5))	3
+print(args_length("john", "peter"))	2
+print(args_length([1, 2, 3]))	1
+7.	Concatenate
+Write a function called concatenate() that receives some strings, concatenates them, and returns the result.
+Examples
+Test Code	Output
+print(concatenate("Soft", "Uni", "Is", "Great", "!"))	SoftUniIsGreat!
+
+8.	Even or Odd
+Create a function called even_odd() that can receive different amount of numbers and a command at the end. The command can be "even" or "odd". Filter the numbers depending on the command and return them in a list. Submit only the function in the judge system.
+Examples
+Test Code	Output
+print(even_odd(1, 2, 3, 4, 5, 6, "even"))	[2, 4, 6]
+print(even_odd(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "odd"))	[1, 3, 5, 7, 9]
+9.	Function Executor
+Create a function called func_executor() that can receive different number of tuples, each of which will have exactly 2 elements: first will be a function and the second will be a tuple of the arguments that need to be passed to that function. Create a list which will contain all the results of the executed functions with its corresponding arguments. For more clarification, see the examples below. Submit only your function in the judge system.
+Examples
+Test Code	Output
+def sum_numbers(num1, num2):
+    return num1 + num2
+
+def multiply_numbers(num1, num2):
+    return num1 * num2
+
+
+print(func_executor((sum_numbers, (1, 2)), (multiply_numbers, (2, 4))))	[3, 8]
+10.	Keyword Arguments Length
+Create a function called kwargs_length() which can receive different amount of keyword arguments and returns their length. Submit only the function in the judge system.
+Examples
+Test Code	Output
+dictionary = {'name': 'Peter', 'age': 25}
+
+print(kwargs_length(**dictionary))	2
+11.	Age Assignment
+Create a function called age_assignment that receives different number of names and then different number of key-value pairs. The key will be a single letter (first letter of a name), and the value a number (age). For each name, find its first letter in the key-value pairs and assign the age to the person's name. At the end return a dictionary with all the names and ages as shown in the example. Submit only the function in the judge system.
+Examples
+Test Code	Output
+print(age_assignment("Peter", "George", G=26, P=19))	{'Peter': 19, 'George': 26}
+print(age_assignment("Amy", "Bill", "Willy", W=36, A=22, B=61))	{'Amy': 22, 'Bill': 61, 'Willy': 36}
+12.	Recursion Palindrome
+Write a recursive function called palindrome() which will receive a word and an index (always 0). Implement the function, so it returns "{word} is a palindrome" if the word is a palindrome and "{word} is not a palindrome" if the word is not a palindrome using recursion. Submit only the function in the judge system.
+Examples
+Test Code	Output
+print(palindrome("abcba", 0))	abcba is a palindrome
+print(palindrome("peter", 0))	peter is not a palindrome
+13.	Recursive Power
+Create a recursive function called recursive_power() which should receive a number and a power. Using recursion return the result of number ** power. Submit only the function in the judge system.
+Examples
+Test Code	Output
+print(recursive_power(2, 10))	1024
+print(recursive_power(10, 100))	10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+
