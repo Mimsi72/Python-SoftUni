@@ -81,26 +81,35 @@ def multiply_numbers(num1, num2):
 
 print(func_executor((sum_numbers, (1, 2)), (multiply_numbers, (2, 4))))	[3, 8]
 10.	Keyword Arguments Length
-Create a function called kwargs_length() which can receive different amount of keyword arguments and returns their length. Submit only the function in the judge system.
+Create a function called kwargs_length() which can receive different amount of keyword arguments and returns their
+length. Submit only the function in the judge system.
 Examples
 Test Code	Output
 dictionary = {'name': 'Peter', 'age': 25}
 
 print(kwargs_length(**dictionary))	2
+
 11.	Age Assignment
-Create a function called age_assignment that receives different number of names and then different number of key-value pairs. The key will be a single letter (first letter of a name), and the value a number (age). For each name, find its first letter in the key-value pairs and assign the age to the person's name. At the end return a dictionary with all the names and ages as shown in the example. Submit only the function in the judge system.
+
+Create a function called age_assignment that receives different number of names and then different number of key-value
+pairs. The key will be a single letter (first letter of a name), and the value a number (age). For each name, find its
+first letter in the key-value pairs and assign the age to the person's name. At the end return a dictionary with all
+the names and ages as shown in the example. Submit only the function in the judge system.
 Examples
 Test Code	Output
 print(age_assignment("Peter", "George", G=26, P=19))	{'Peter': 19, 'George': 26}
 print(age_assignment("Amy", "Bill", "Willy", W=36, A=22, B=61))	{'Amy': 22, 'Bill': 61, 'Willy': 36}
 12.	Recursion Palindrome
-Write a recursive function called palindrome() which will receive a word and an index (always 0). Implement the function, so it returns "{word} is a palindrome" if the word is a palindrome and "{word} is not a palindrome" if the word is not a palindrome using recursion. Submit only the function in the judge system.
+Write a recursive function called palindrome() which will receive a word and an index (always 0). Implement the
+function, so it returns "{word} is a palindrome" if the word is a palindrome and "{word} is not a palindrome" if
+the word is not a palindrome using recursion. Submit only the function in the judge system.
 Examples
 Test Code	Output
 print(palindrome("abcba", 0))	abcba is a palindrome
 print(palindrome("peter", 0))	peter is not a palindrome
 13.	Recursive Power
-Create a recursive function called recursive_power() which should receive a number and a power. Using recursion return the result of number ** power. Submit only the function in the judge system.
+Create a recursive function called recursive_power() which should receive a number and a power. Using recursion return
+the result of number ** power. Submit only the function in the judge system.
 Examples
 Test Code	Output
 print(recursive_power(2, 10))	1024
